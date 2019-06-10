@@ -1,0 +1,28 @@
+#gBox{
+				width: 100%;
+				box-sizing: border-box;
+				margin-left: 45px;
+			}
+			.goods{
+				float: left;
+				margin: 60px;
+				width: 192px;
+				height: 278px;
+				padding: 3px;
+			}
+			.gName{
+				font-size: 20px;
+				text-align: center;
+			}
+			.gPic{
+				width: 192px;
+				height: 192px;				
+			}
+			.gInf{
+				font-size: 20px;
+				text-align: center;
+			}
+			.price{
+				font-size: 20px;
+				text-align: center;
+			}

@@ -1,0 +1,56 @@
+#vbox1{
+	width: 1400px;
+	height: 550px;
+	/*background: yellow;*/
+}
+#vfont{
+	font-size: 35px;
+	text-align: center;
+	padding-top: 30px;
+}
+#vhover1:hover{
+	opacity: 0.5;
+}
+#vhover2:hover{
+	opacity: 0.5;
+}
+#vbox2{
+	width: 1330px;
+	height:1800px;
+	/*background: pink;*/
+	background-image: url(../img/vipbox4.png);
+	background-size: 100% 100%;
+}
+#vfont2{
+	font-size: 50px;
+	padding-top: 50px;
+	margin-left: 200px;
+}
+#vfont3{
+	font-size: 20px;
+	padding-top: 30px;
+	margin-left: 160px;
+}
+#vfont4{
+	font-size: 25px;
+	background: pink;
+	width: 1400px;
+	height: 50px;
+	padding-left: 30px;
+	line-height: 50px;
+}
+#vbox3{
+	width: 1440px;
+	height: 450px;
+	/*background: blue;*/
+}
+.vpic{
+	width: 350px;
+	height: 350px;
+	margin-top: 50px;
+	margin-left: 70px;
+}
+.vpic:hover{
+	transform:scale(1.1);
+	transition: 0.3s;
+}

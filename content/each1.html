@@ -1,0 +1,35 @@
+<div id="gBox">
+			<div class="goods">
+				<img src="img/each11.png" class="gPic"/>
+				<p class="gName">MUMGO/木木果</p>
+				<p class="gInf">韩版潮流斜挎单肩包</p>
+				<p class="price">¥169</p>
+						
+			</div>			
+		</div>
+		<script>
+			//window.onload
+           $(function(){
+           	   console.log( srr );
+           	   //each
+           	   $.each(srr, function(index,data) {
+           	   	   console.log(data)
+           	   	   var str = `<div class="goods">
+									<img src="${data.src}" class="gPic"/>
+									<p class="gName">${data.name}</p>
+									<p class="gInf">${data.inf}</p>
+									
+										<p class="price">${data.price}</p>
+												
+								</div>	`;
+					$('#gBox').append( str );
+           	   });
+           })
+           
+           $('div').on('click','.gPic',function(){
+				alert('点我也没什么用')
+//				$('gPic').hover(function(){
+//      		$('p').css({"color":"red","fontWeight":"900"})
+//      	}
+			})
+		</script>

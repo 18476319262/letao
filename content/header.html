@@ -1,0 +1,27 @@
+<ul id="nav">
+						<li class="btns l">首页</li>
+						<li class="btns l"><a href="vipArea.html" target="_blank" style="color: white;">VIP专区</a></li>
+						<li class="btns l click">
+							运动鞋
+							<ul id="box2">
+								<li><img src="img/hover.png"/></li>
+							</ul>
+						</li>
+						<li class="btns l">女鞋</li>
+						<li class="btns l">男鞋</li>
+						<li class="btns l">童鞋</li>
+						<li class="btns l">箱包</li>
+						<li class="btns l"><a href="liebiao.html" target="_blank" style="color: white;">全品搜索</a></li>
+			</ul>
+			
+<script>
+			var oHeader = document.getElementsByTagName('header')[0];
+			document.onscroll = function(){
+				var top = document.documentElement.scrollTop;
+				if(top>100){
+					oHeader.style.position = 'fixed';
+				}else{
+					oHeader.style.position = 'static';
+				}				
+			}
+		</script>

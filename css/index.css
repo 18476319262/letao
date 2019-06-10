@@ -1,0 +1,188 @@
+#box1{
+	width: 300px;
+	height: 73px;
+	/*background: pink;*/
+	margin: 30px 30px;
+}
+
+/*header.css*/
+#nav{
+	width: 808px;
+	height: 30px;
+	background: black;
+	margin:0 30px;
+}
+.btns{
+	color: white;
+	width: 100px;
+	border-right: 1px solid white;
+	text-align: center;
+	line-height: 30px;
+	font-size: 18px;
+}
+.btns:hover{
+	color: red;
+}
+header{
+    width: 100%;
+    height: 30px;
+    /*background: aqua;*/
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
+#box2{
+	display: none;
+	position: relative;
+	z-index: 30;
+}
+.click:hover #box2{
+	display: block;
+	position: absolute;
+	left: 0;
+}
+
+/*sidebar.css*/
+#box3{
+	height: 100%;
+	width: 30px;
+	background: black;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+#sidebar{
+	height: 450px;
+	width: 30px;
+	/*background: pink;*/
+}
+.icon{
+	text-align: center;
+	line-height: 50px;
+}
+.icon:hover{
+	background: red;
+}
+
+/*carousel.css*/
+body,
+			ul,
+			li {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			#box {
+				width: 1290px;
+				height: 350px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			#picbox {
+				width: 1290px;
+				height: 350px;
+				background: white;
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.bigPic {
+				width: 1290px;
+				height: 350px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				transition: 0.5s;
+			}
+			
+			#btnBox {
+				width: 1150px;
+				height: 54px;
+				margin-top: 6px;
+				display: flex;
+				display: -webkit-flex;
+				justify-content: space-between;
+			}
+			
+			.picBtn {
+				width: 138px;
+				height: 54px;
+				background: black;
+			}
+			
+			#before,
+			#next {
+				width: 35px;
+				height: 35px;
+				background: lightcyan;
+				position: absolute;
+				z-index: 9;
+			}
+			
+			#before {
+				top: 50%;
+				left: 0;
+			}
+			
+			#next {
+				top: 50%;
+				right: 0;
+			}
+			#before:hover{
+				background: gray;
+			}
+			#next:hover{
+				background: gray;
+			}
+			
+/*each1.css*/
+#gBox{
+				width: 100%;
+				box-sizing: border-box;
+				margin-left: 45px;
+			}
+			.goods{
+				float: left;
+				margin: 60px;
+				width: 192px;
+				height: 278px;
+				padding: 3px;
+			}
+			.gName{
+				font-size: 20px;
+				text-align: center;
+			}
+			.gPic{
+				width: 192px;
+				height: 192px;				
+			}
+			.gInf{
+				font-size: 20px;
+				text-align: center;
+			}
+			.price{
+				font-size: 20px;
+				text-align: center;
+			}
+
+/*each2.css*/
+#each2{
+	width: 214px;
+	height: 257px;
+	/*background: yellow*/
+}
+.eachfont{
+	text-align: center;
+	font-size: 15px;
+}
+.eachimg{
+	float: left;
+	margin: 5px 60px;
+}
+.eachimg:hover{
+	background: black;
+	color: white;
+	opacity: 0.7;
+}

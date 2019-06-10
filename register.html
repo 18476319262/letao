@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.js"></script>
+		<title>登录注册</title>
+		<style type="text/css">
+			#rbox1{
+				/*background: yellow;*/
+				width: 500px;
+				height: 130px;
+				margin: 30px 100px;
+			}
+			#rbox2{
+				width: 350px;
+				height: 295px;
+				/*background: yellow;*/
+				float: right;
+				margin-right: 100px;
+				border: 2px solid black;
+			}
+			#rbox3{
+				text-align: left;
+				padding-left: 30px;
+				height: 40px;
+				line-height: 40px;
+				border: 1px solid black;
+			}
+			.rbox4{
+				height: 40px;
+				width: 40px;
+				margin-left: 20px;
+				
+			}
+			.rbox5{
+				height: 36px;
+				width: 266px;
+				margin-top: 20px;
+			}
+			h4{
+				font-size: 12px;
+				color: white;
+				padding: 0;
+				margin: 0;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="rbox1">
+			<img src="img/logo.png" style="float: left;"/>
+			<h1 style="float: left;margin: 20px 20px;">欢迎登录</h1>
+		</div>
+		
+		<div id="rbox2">
+				<h2 id="rbox3">登录</h2>
+				<img src="img/register1.png"/ class="rbox4"><input type="text" class="rbox5" placeholder="用户名/手机号"/><br />
+				<h4 id="p1">请输入用户名/手机号</h4>
+				<img src="img/register2.png"/ class="rbox4"><input type="text" class="rbox5" placeholder="密码"/><br />
+				<h4 id="p2">请输入密码</h4>
+				<input type="checkbox" style="margin-left: 20px;margin-top: 20px;"/>记住密码
+				验证码登录 忘记密码？ 免费注册<br />
+				<button style="height: 35px;
+					width: 300px;
+					background: red;
+					color: white;
+					margin-left: 25px;
+					margin-top: 25px;">登录</button>
+		</div>
+		
+		<div style="height: 400px;width: 300px;">
+			
+		</div>
+		
+		<p style="text-align: center;font-size: 15px;">Copyright © 2008 - 2017 Letao Inc. 乐淘网  版权所有    买鞋子  上乐淘    粤ICP备14019125号</p>
+		<p style="text-align: center;font-size: 15px;">0b46f21fbe096b63c0de6fca00338744eaf8ac60 公安备案号    44010602005401</p>
+		
+		<script>
+			$('.rbox4').blur(function(){
+				//取到input的value值，用.val()
+				var index = $('.rbox4').index(this);
+				var value = $('.rbox4').eq(index).val();
+				var reg;
+				switch(index){
+					case 0:
+					  reg=/^\w{4}$/;
+					  break;
+					case 1:
+					  reg=/^1\d{10}$/;
+					  break;					  
+				}
+				checked( reg,value,index )
+			})
+			
+			function checked( reg,value,index ){
+				var resulet = reg.test( value );
+				console.log(value,resulet,reg);
+				if(resulet==false){
+					$('h4').eq(index).css('color','orange');
+				}else{
+					$('h4').eq(index).css('color','white');
+				}
+			}
+		</script>
+	</body>
+</html>

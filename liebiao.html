@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shangpin.css"/>
+		<link rel="stylesheet" type="text/css" href="css/liebiao.css"/>
+		<script src="js/liebiao.js"></script>
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<img src="img/liebiaobox.png"/>
+		<img src="img/sidebar.png" id="side"/>
+		
+		<div id="gBox">
+			<div class="goods">
+				<img src="img/liebiao1.jpg" class="gPic"/>
+				<p class="gName">MUMGO/木木果</p>
+				<p class="gInf">韩版潮流斜挎单肩包</p>
+				<p class="price">¥169</p>
+						
+			</div>			
+		</div>
+		
+		
+		<img src="img/liebiaobotto.png"/>
+		<script>
+			//window.onload
+           $(function(){
+           	   console.log( srr );
+           	   //each
+           	   $.each(srr, function(index,data) {
+           	   	   console.log(data)
+           	   	   var str = `<div class="goods">
+									<img src="${data.src}" class="gPic"/>
+									<p class="gName">${data.name}</p>
+									<p class="gInf">${data.inf}</p>
+									
+										<p class="price">${data.price}</p>
+												
+								</div>	`;
+					$('#gBox').append( str );
+           	   });
+           })
+           
+           
+           $('div').on('click','.gPic',function(){
+				alert('点我也没什么用')
+//				$('gPic').hover(function(){
+//      		$('p').css({"color":"red","fontWeight":"900"})
+//      	}
+			})
+		</script>
+	</body>
+</html>

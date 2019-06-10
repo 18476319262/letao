@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<script src="js/jquery.js"></script>
+		<script src="js/each1.js"></script>
+		<script src="js/each2.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<style type="text/css">
+		/*.bottom{
+			margin-left: 50px;
+			line-height: 50px;
+			font-size: 20px;
+			font-weight: bold;
+		}*/
+	</style>
+	<body>
+		<div id="box1">
+			<img src="img/logo.png"/>
+		</div>
+		
+			<header> </header>
+			<sidebar> </sidebar>
+			<carousel> </carousel> 
+			
+			<h1 style="margin-left: 30px;">工厂原创/Be Original</h1>
+			
+			<img src="img/box1.png" style="margin-left: 75px;"/>
+			
+			<h1 style="margin-left: 30px;">箱包 / Bag
+					<span style="font-size: 15px;margin-left: 950px;">双肩包  /   单肩斜挎包  /   查看更多</span>‍
+			</h1>
+			
+			<img src="img/box2.png" style="margin-left: 75px"/>
+			
+			<each1> </each1>
+			
+			<h1 style="margin-left: 30px;">bug运动/ Sports
+					<span style="font-size: 15px;margin-left: 668px;">
+						跑步鞋  /   板鞋   /   帆布鞋   /   篮球鞋   /   训练鞋   /    足球鞋   /    查看更多‍></span>‍
+			</h1>
+			
+			<img src="img/box3.png" style="margin-left: 70px;"/>
+			
+			<each2> </each2>
+			
+			<div style="<!--background: yellow;-->width: 1320px;height: 450px;margin-top: 800px;">
+				<h1 style="margin-left: 80px;padding-top: 30px;">超级买家秀</h1>
+				<img src="img/maijiaxiu.png" style="margin-left: 70px;margin-top: 30px;"/>
+			</div>
+			
+			<!--<div style="background: pink;width: 1320px;height: 350px;">
+				<span class="bottom">关于我们</span> 
+				<span class="bottom">新手帮助</span>
+				<span class="bottom">支付/配送</span> 
+				<span class="bottom">售后服务</span> 
+				<span class="bottom">联系乐淘</span> 
+			</div>-->
+			
+			<img src="img/bottom.png" style="height: 293px;width: 1349px;"/>
+			
+		<script>
+			
+				alert('该网站可能过于辣眼睛，确定继续访问吗？')
+			
+				$('header').load('content/header.html')
+				
+				$('sidebar').load('content/sidebar.html')
+				
+				$('carousel').load('content/carousel.html')
+				
+				$('each1').load('content/each1.html')
+				
+				$('each2').load('content/each2.html')
+				
+				
+				
+				$('#top').click(function(){
+					$("html,body").animate({scrollTop:0});
+				})
+		</script>
+		
+	</body>
+</html>

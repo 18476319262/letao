@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/shangpin.css"/>
+		<style>
+			
+		</style>
+		
+	</head>
+	<body>
+		<img src="img/shangpintop.png"/>
+		<img src="img/sidebar.png" id="side"/>
+		<div id="spic">
+			<img src="img/shangpin1.jpg" id="s"/>
+			<div id="bpic">
+				<img src="img/shangpin1.jpg" id="b"/>
+			</div>
+			<div id="square"></div>
+		</div>
+		
+		<div id="sbox1">
+			<h1 style="text-align: center;">ADIDAS阿迪达斯 女式 QT VULC 2.0 W 印花帆布休闲板鞋</h1>
+			<p class="font"> 销售价 : ￥ <span style="font-size: 35px;"> 99.0 </span><span> 市场价:￥199.0 </span></p> 
+			<p class="font"> 尺寸 :  <button> 3 4 </button> <button> 3 5 </button> <button> 3 6 </button></p>
+			<p class="font"> 数量 :  <button> - </button> 1 <button> + </button><span> 剩余 128 件   763人已购买 </span></p>
+			<button id="sbtn1">加入购物车</button>  
+			<button id="sbtn2">立即购买</button>
+		</div>
+		<script>
+			$('#spic').mousemove(function(event){
+				
+				var nowleft = Math.floor(event.clientX - $('#spic').offset().left)-50;
+				var nowtop  = event.clientY - $('#spic').offset().top-50;
+				console.log( nowleft,nowtop )
+				
+				if(nowleft<0){
+					nowleft = 0 ;
+				}
+				if(nowleft>200){
+					nowleft = 200 ;
+				}				
+				if(nowtop<0){
+					nowtop = 0 ;
+				}				
+				if(nowtop>200){
+					nowtop = 200 ;
+				}				
+				
+				$('#square').css({
+					'top':nowtop,
+					'left':nowleft
+				})
+				$('#b').css({
+					'top':-nowtop*3,
+					'left':-nowleft*3
+				})				
+				
+				
+			})
+		</script>
+	</body>
+</html>
